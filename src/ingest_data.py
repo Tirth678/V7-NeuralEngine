@@ -27,3 +27,12 @@ csv_files = [f for f in extracted_files if f.endswith(" .csv")]
 
 if len(csv_files) == 0:
     raise FileNotFoundError("No CSV found in the extracted data")
+if len(csv_files) > 1:
+    raise ValueError("Multiple CSV files found, please speicify which one to use")
+
+#read csv into a dataframe
+csv_file_path = os.join("extracted_data", csv_files
+df = pd.read_csv(csv_file_path))
+
+# return the bataFrame
+return df
