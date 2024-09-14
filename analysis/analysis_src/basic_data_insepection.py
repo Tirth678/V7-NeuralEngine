@@ -54,4 +54,40 @@ class SummaryStatiticsInspectionStratergy(DataInspectionStrategy):
 
 class DataInspector:
     def __init__(self, strategy: DataInspectionStrategy):
-        
+        """
+        initializes the dataInspector with a specific inspection
+
+        parameters:
+        stragergy (DataInsepctionStragy): The stragery to be used in speicific insepction
+
+        returns:
+        none
+        """
+    self._strategy = strategy
+
+def set_strategy(self, stratergy: DataInspectionStrategy):
+    """
+    sets a new strategy for the dataInspector
+
+    parameters:
+    stratergy(DataInspectionStrategy): The new stratergy
+
+    returns:
+    none
+    """
+    self._strategy = strategy
+
+def execute_inspection(self, df: pd.DataFrame):
+    """
+    execute the inspection using the currrent strategy
+
+    parameters:
+    df (pd.DataFrame): The dataframe to be inspected
+
+    returns:
+    none: exectued the strategy's inspection method
+    """
+
+self._strategy.inspect(df)
+
+
