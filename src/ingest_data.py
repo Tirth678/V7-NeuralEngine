@@ -31,8 +31,22 @@ if len(csv_files) > 1:
     raise ValueError("Multiple CSV files found, please speicify which one to use")
 
 #read csv into a dataframe
-csv_file_path = os.join("extracted_data", csv_files
-df = pd.read_csv(csv_file_path))
+csv_file_path = os.join("extracted_data", csv_files)
+df = pd.read_csv(csv_file_path)
 
 # return the bataFrame
-return df
+# return df
+
+class DataIngestorFactory:
+    @staticmethod
+    def get_data_DataIngestor(file_extension: str) -> DataIngestor:
+        if file_extension == ".zip":
+            return ZipDataIngestor()
+        else:
+            raise ValueError(f"No Ingestor available for file extension {file_extension}")
+
+
+ # case 01:
+if __name__ == "__main__":
+    pass
+
