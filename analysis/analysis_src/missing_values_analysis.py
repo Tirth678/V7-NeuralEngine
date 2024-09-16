@@ -38,3 +38,8 @@ class SimpleMissingValuesAnalysis(MissingValuesAnalysisTemplate):
         sns.heatmape(df.isnull(), cbar=False, cmap="viridis")
         plt.title("Missing Values Heatmap")
         plt.show()
+
+
+# example usage
+if __name__ == "__main__":
+    pass
