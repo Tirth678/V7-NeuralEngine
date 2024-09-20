@@ -43,3 +43,5 @@ class SimpleMissingValuesAnalysis(MissingValuesAnalysisTemplate):
 # example usage
 if __name__ == "__main__":
     pass
+
+# this will be continued soon
