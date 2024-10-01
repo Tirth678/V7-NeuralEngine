@@ -1,7 +1,5 @@
-<h1>This is V-7 End-to-end Prices Prediction System</h1>
+The project is focused on building an end-to-end machine learning pipeline for a house price prediction system.
 <br>
-This project is focused on building an end-to-end machine learning pipeline for house price prediction system.
+The pipeline is developed using ZenML, a MLOps framework that helps in managing machine learning workflows, and MLflow, which is used for experiment tracking and model deployment.
 <br>
-Primary goal is to predict house prices based on various features of the properties, such as the size, location, condtion.
-<br>
-more details about the model will be shared soon.
+The primary goal is to predict house prices based on various features of the properties, such as the size, location, and condition.
